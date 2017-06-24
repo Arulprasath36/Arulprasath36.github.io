@@ -100,25 +100,30 @@ driver.get() method is used to open any URL. There is another method, we can use
 In the previous example, we have opened google.com. Now in this task, we are going to refresh the page, go forward and backward.
 
 {% highlight java %}
-		WebDriver driver = new FirefoxDriver();
-		driver.navigate().to("http://www.google.com");
-		driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");
-		driver.navigate().back();
-		driver.navigate().refresh();
-        driver.navigate().forward(); 
+WebDriver driver = new FirefoxDriver();
+driver.navigate().to("http://www.google.com");
+driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");
+driver.navigate().back();
+driver.navigate().refresh();
+driver.navigate().forward(); 
 {% endhighlight %}
 
 <div class="message">
-  If you notice carefully, we are not using `driver.get()` to get the URL, we are using `driver.navigate().to()`. Because, using `get()` we can only hit the URL and we can't perform any other operations on that. We may need to perform operations like refresh,going forward and backward. In that case, we have to opt ofr `navigate` method !
+Have you Noticed?
+We are not using  `driver.get()`  to get the URL, we are using `driver.navigate().to()`. Because, using `get()` we can only hit the URL and we can't perform any other operations on that. We may need to perform operations like refresh,going forward and backward. In that case, we have to opt ofr `navigate` method !
 </div>
 
-### Gists via GitHub Pages
+### Code explanation
 
-Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+I think the method names are self explanatory, refresh method is to refresh, back method is to go back and forward is to go forward. Not tough right?
 
-{% gist 5555251 gist.md %}
+You should have a question. What's the work of this line `driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");`
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.
+We are instructing the program to find the text box in google home page and asking it to type "Bishop Heber trichy". That's the job of this line.Don't worry about, if you don't get it <strong> How to find the element </strong> is our next topic. 
+
+### Web element! web element! Where are you?
+
+We have so many tasks to be done on a webpage. For instance, we might search, click a link, download a file, upload a file and so on. For all these operations, we have to find the respective element and click that. In our code also, we are going to do the same. Let's find out how to find the elements.
 
 ### Lists
 
