@@ -12,7 +12,7 @@ Great! Now we are going to do this with the help of a program.
   Remember! Coding is like teaching a small kid to do things. If we instruct it clearly, it will do miracles for you!
 </div>
 
-#### My first automation code
+#### Your first automation code
 Below is the `code` to open the firefox and  navigate to google.com
 
 {% highlight java %}
@@ -47,7 +47,26 @@ public static void main(String[] args) throws InterruptedException {
 
 {% endhighlight %}
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+If you have knowledge in using Eclipse, you can straight away use the code. If you are unsure on what to do, Please follow the below steps.
+
+#### How to write Your first automation code
+* Open the installed Eclipse and click on File->New->Java Project
+* Give a suitable project name. (seleniumBasics) and click on Finish.
+* There will be an src folder inside the project. Right-click on that -> New -> Package ->Give a suitable package name (com.selenium.learning)
+* Right click on that package -> new Class -> Give a name to the class (OpenGoogle)
+* Copy the code from the above code segment and paste in the main method of your OpenGoogle class.
+
+#### Are you getting the errors? Great you are on right track!
+
+* You should get errors on lines like `import org.openqa.selenium.By; import org.openqa.selenium.WebDriver; import org.openqa.selenium.firefox.FirefoxDriver; WebDriver driver = new FirefoxDriver();` and `driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");` 
+
+* The errors are because, the code above is a combination of Java and Selenium (A web automation framework). So far we have created a Java project and we didn't instruct the compiler that our code is also related to Selenium. So we have to tell our compiler to refer, Selenium also. 
+
+* Right click on your project->Build Path -> Configure Buildpath -> Libraries Tab -> Add External Jar
+
+*And then add the Jar you have downloaded in " Installation and Environment set up " step.
+
+![placeholder](http://placehold.it/800x400 "Large example image")
 
 ### Gists via GitHub Pages
 
