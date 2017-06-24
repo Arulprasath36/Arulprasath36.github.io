@@ -31,7 +31,7 @@ public class OpenGoogle {
 public static void main(String[] args) throws InterruptedException {
 	
 	// code to open the browser and go to google.com
-		System.setProperty("webdriver.gecko.driver", "path where u stored\\geckodriver.exe");  
+	System.setProperty("webdriver.gecko.driver", "path where u stored\\geckodriver.exe");  
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.google.com");
 		driver.quit();
@@ -91,7 +91,7 @@ Congrats on successfully running the first program. Let me explain the code line
 
 * `driver.quit` will close the browser.
 
-###Brain Teaser
+##Brain Teaser
 
 driver.get() method is used to open any URL. There is another method, we can use to hit any URL. Find out what is that and How is that different from get method?
 
