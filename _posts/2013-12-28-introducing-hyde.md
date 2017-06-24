@@ -60,5 +60,6 @@ An IDE + A program written in any programming language + Testing frameworks and 
 * Programming language = Java (widely used)
 * Testing Framework / tools = Selenium, JUnit, TEstNg
 
-NOTE: No need to worry if you don't get any of these or all of these terms. We will get to know while evolving through this article.
-Thanks!
+<font color="red">NOTE: No need to worry if you don't get any of these or all of these terms. We will get to know while evolving through this article. </font>
+
+Good luck in learning!
