@@ -1,49 +1,50 @@
 ---
 layout: post
-title: Example content
+title: It's time to bring out the programmer
 ---
+### Task: Open the Firefox and go to Google.com
 
+If you have been given the above task what will you do? You will open Firefox browser and type www.google.com. TATADA! Task finished!!!
+
+Great! Now we are going to do this with the help of a program.
 
 <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+  Remember! Coding is like teaching a small kid to do things. If we instruct it clearly, it will do miracles for you!
 </div>
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+#### My first automation code
+Below is the `code` to open the firefox and  navigate to google.com
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+{% highlight java %}
+package seleniumBasics;
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+/**
+ * 
+ * @author Arulprasath
+ *
+ */
+public class OpenGoogle {
 
-## Inline HTML elements
+public static void main(String[] args) throws InterruptedException {
+	
+	
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.gecko.driver", "C: your-path\\geckodriver.exe");  
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("http://www.google.com");
+		driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");
+		driver.navigate().back();
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+		driver.close();
+		driver.quit();
+}
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+}
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-### Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-{% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
 {% endhighlight %}
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
