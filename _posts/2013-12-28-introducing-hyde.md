@@ -5,30 +5,32 @@ title: Introduction
 
 Welcome to the Test Automation learning. In this [GitHub repository](https://github.com/Arulprasath36/TestAutomationExamples), you will learn all the basics and advanced concepts of test automation using Selenium and various other methodologies. You are free to download and use the codes for learning purpose. In case you have any doubts or queries you can very well [contact me](https://www.facebook.com/counsellingguruteam/).
 
-### Built on Poole
+### How to use this website
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Hyde here) includes the following:
+This website will be serving as step by step guide for learning test automation from the scratch. The tutorials will be a series and is best suited for students. If you are already a professional, you can help us improving the contents.
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+Pre-requisites:
 
-### Hyde features
+* Basic knowledge in any programming language
+* Basic Knowledge on any IDE (Eclipse, Netbeans, IntelliJ)
+* Thirst for learning
 
-In addition to the features of Poole, Hyde adds the following:
+### Special features
 
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/hyde#themes), available via `<body>` classes
+* Step by step right from the installation
+* Even a beginner can understand
+* Code snippet along with explanation
+* Open source Github repository.
 
-[Head to the readme](https://github.com/poole/hyde#readme) to learn more.
+### Installation and Environment set up
 
-### Browser support
+* [Download Java 8 and install it on your machine, if you don't have](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
-Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
+* Download and Install Eclipse from the official website according to your OS.
+
+* Download the Selenium server Jar from http://www.seleniumhq.org/download/
+
+* Download Firefox Gecko driver or chrome driver from their official Github page.
 
 ### Download
 
