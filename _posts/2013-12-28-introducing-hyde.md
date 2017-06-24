@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Introducing Hyde
+title: Introduction
 ---
 
-Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+Welcome to the Test Automation learning. In this [GitHub repository](https://github.com/Arulprasath36/TestAutomationExamples), you will learn all the basics and advanced concepts of test automation using Selenium and various other methodologies. You are free to download and use the codes for learning purpose. In case you have any doubts or queries you can very well [contact me](https://www.facebook.com/counsellingguruteam/).
 
 ### Built on Poole
 
