@@ -28,12 +28,37 @@ Pre-requisites:
 
 * Download and Install Eclipse from the official website according to your OS.
 
-* Download the Selenium server Jar from http://www.seleniumhq.org/download/
+* Download the [Selenium server Jar](http://www.seleniumhq.org/download/)
 
 * Download Firefox Gecko driver or chrome driver from their official Github page.
 
-### Download
+### Why learning automation is mandatory?
 
-Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.
+Before learning to code, it is always a good practice to know why we are doing this. So, let's have a clear understanding on why we are learning test automation.
 
+A typical IT industry like Infosys, TCS or any other major firm may charge the client a sum of 3000 US Dollars for an employee who has around 0-2 years experience.
+
+Now consider the below scenario:
+
+3000 USD= 2 lakhs approx
+
+And the employee will be paid around 20-30 thousand per month. This was the case so far. Now the companies have taken a decision to cost cutting. Since most of the projects are testing projects they have decided to make it automated so that a two or three automation developers are enough to do the work of 10 manual testers. A simple program written with Java can perform an operation within a minute.
+
+Considering the above situation it would be wiser to learn test automation.
+
+### Now you know why. It's time to know How?
+
+With the rapid growth in technology and the mode of developing and delivering the software code has tremendously changed. This impact on development paved the way for rapid testing methodologies also and thus came the automation concept.
+
+Almost 99% of the Automation is happening in the below way:
+
+An IDE + A program written in any programming language + Testing frameworks and tools = Automated scripts.
+
+### What we are going to use?
+
+* An IDE = Eclipse
+* Programming language = Java (widely used)
+* Testing Framework / tools = Selenium, JUnit, TEstNg
+
+NOTE: No need to worry if you don't get any of these or all of these terms. We will get to know while evolving through this article.
 Thanks!
