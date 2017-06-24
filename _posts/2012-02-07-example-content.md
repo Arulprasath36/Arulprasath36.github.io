@@ -30,16 +30,10 @@ public class OpenGoogle {
 
 public static void main(String[] args) throws InterruptedException {
 	
-	
-		// TODO Auto-generated method stub
-		System.setProperty("webdriver.gecko.driver", "C: your-path\\geckodriver.exe");  
+	// code to open the browser and go to google.com
+		System.setProperty("webdriver.gecko.driver", "path where u stored\\geckodriver.exe");  
 		WebDriver driver = new FirefoxDriver();
-		driver.navigate().to("http://www.google.com");
-		driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");
-		driver.navigate().back();
-		driver.navigate().refresh();
-		Thread.sleep(3000);
-		driver.close();
+		driver.get("http://www.google.com");
 		driver.quit();
 }
 
@@ -66,7 +60,40 @@ If you have knowledge in using Eclipse, you can straight away use the code. If y
 
 *And then add the Jar you have downloaded in " Installation and Environment set up " step.
 
+* Also mention the correct path of the Gecko driver or chrome driver as explained in the code.
+
+* If you are sing chrome driver then use, `System.setProperty("webdriver.chromedriver.driver", "path of your chrome driver\\chromedriver.exe"); `
+
 <img src="{{'https://github.com/Arulprasath36/Arulprasath36.github.io/blob/master/assets/img/buildpath.PNG'}}" alt=""> 
+
+#### Run the program
+*If you had add the selenium Jar in the buildpath, your program is ready to run.
+
+* Right click on the Java class -> Run As -> Java application.
+
+* You will get some warnings, ignore those as of now. Your browser will be launched and it will launch the firefox and it will go to google.com
+
+<div class="message">
+  Cooool!!!! I ran my first automation program. It would be better if I know how it works.
+</div>
+
+#### Code Explanation
+Congrats on successfully running the first program. Let me explain the code line by line here.
+
+* `public static void main(String[] args) throws InterruptedException ` = This is where the program is begining to execute. The compiler will do the operations from here.
+
+* `System.setProperty("webdriver.gecko.driver", "path where u stored\\geckodriver.exe");` = This is the line helps the compiler to invoke the Firefox browser when 
+ `WebDriver driver = new FirefoxDriver(); ` is encountered. The code cannot directly click on the browser and open it, it needs a intermediary and that is the geckodriver or chrome driver. 
+ 
+* `WebDriver driver = new FirefoxDriver();`= orders the program to open Firefox. `WebDriver driver = new ChromeDriver();`= for opening Chrome. Selenium supports all the major browsers. But I recommend not to use Internet Explorer.
+
+* `driver.get("http://www.google.com");`= This will tell the browser to open google.com
+
+* `driver.quit` will close the browser.
+
+###Brain Teaser
+
+driver.get() method is used to open any URL. There is another method, we can use to hit any URL. Find out what is that and How is that different from get method?
 
 ### Gists via GitHub Pages
 
