@@ -4,27 +4,25 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey there!  First of all, I appreciate you interest and effort to learn automation. Feel free to contact me through the Facebook page in case you have any doubts.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I am *Arulprasath*, working as a senior software engineer for one of the biggest IT exporters in India. I have been associated with automation for the past three years and I train young professionals.
 
-There are currently two themes built on Poole:
+I own a blog called [counsellingguru.com](http://counsellingguru.com), in that I share most of my interview experiences when I was a fresher and lot of useful things for students especially from Engineering major.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Learn more and contribute on [GitHub](https://github.com/Arulprasath36/TestAutomationExamples).
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Now I'm a programmer and here are some fun facts about me
 
-## Setup
+* I have a *bachelors degree in Computer science* and I didn't even know to write a single line of code until I finish the degree. 
 
-Some fun facts about the setup of this project include:
+* My fiancee struggled for around two weeks to make me understand how the for loop works.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+* When I was in college, one of my friends told, IT people use a special software to write code for them and you dont have to know the syntax. I believed and later came to know that magical software is nothing but *Eclipse*
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+* I will mug up the header files to be included for each program when I was in college.
 
-Thanks for reading!
+* Last but not the least, during my college days, I swore, *I will not work in IT industry* even for one day
+
+Thanks for reading and Good luck with the learning!
