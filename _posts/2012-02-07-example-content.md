@@ -2,7 +2,7 @@
 layout: post
 title: It's time to bring out the programmer
 ---
-### Task: Open the Firefox and go to Google.com
+### Task 1: Open the Firefox and go to Google.com
 
 If you have been given the above task what will you do? You will open Firefox browser and type www.google.com. TATADA! Task finished!!!
 
@@ -94,6 +94,23 @@ Congrats on successfully running the first program. Let me explain the code line
 ### Brain Teaser
 
 driver.get() method is used to open any URL. There is another method, we can use to hit any URL. Find out what is that and How is that different from get method?
+
+## Task 2: Refresh, Go back and Go forward
+
+In the previous example, we have opened google.com. Now in this task, we are going to refresh the page, go forward and backward.
+
+{% highlight java %}
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("http://www.google.com");
+		driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");
+		driver.navigate().back();
+		driver.navigate().refresh();
+        driver.navigate().forward(); 
+{% endhighlight %}
+
+<div class="message">
+  If you notice carefully, we are not using `driver.get()` to get the URL, we are using `driver.navigate().to()`. Because, using `get()` we can only hit the URL and we can't perform any other operations on that. We may need to perform operations like refresh,going forward and backward. In that case, we have to opt ofr `navigate` method !
+</div>
 
 ### Gists via GitHub Pages
 
