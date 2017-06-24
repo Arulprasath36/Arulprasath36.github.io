@@ -4,18 +4,18 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-
+relative_permalinks: true
 
 # Setup
 title:            Test Automation Tutorials
-tagline:          'Learning simplified'
-description:      'These tutorials are written by Arulprasath. He is a professional trainer and test automation developer in India's largest IT exporter.'
-url:              https://arulprasath36.github.io/
+tagline:          'learning simplified'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Arulprasath.R'
- 
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/Arulprasath36/TestAutomationExamples
+  repo:           https://github.com/poole/hyde
