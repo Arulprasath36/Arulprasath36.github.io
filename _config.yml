@@ -8,14 +8,14 @@ permalink:        pretty
 
 # Setup
 title:            Selenium
-tagline:          'learning simplified'
+tagline:          'Learning simplified'
 description:      'Tutorials are scripted by Arulprasath from <a href="http://www.counsellingguru.com" target="_blank">CounsellingGuru.com</a>. Contact us through <a href="https://www.facebook.com/counsellingguruteam/" target="_blank">facebook page</a>.'
 url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Arulprasath'
+  url:            https://web.facebook.com/counsellingguruteam/
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/Arulprasath36/TestAutomationExamples
