@@ -4,7 +4,7 @@ title: About
 ---
 
 <p class="message">
-Hey there! First of all, I appreciate your interest and effort to learn automation.Feel free to [contact](https://www.facebook.com/counsellingguruteam/) page in case you have any doubts.
+Hey there! First of all, I appreciate your interest and effort to learn automation.Feel free to contact me through my facebook page mentioned in the sidebar in case you have any doubts.
 </p>
 
 I am *Arulprasath*, working as a senior software engineer for one of the biggest IT exporters in India. I have been associated with automation for the past three years and I train young professionals.
