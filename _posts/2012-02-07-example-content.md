@@ -66,7 +66,7 @@ If you have knowledge in using Eclipse, you can straight away use the code. If y
 
 *And then add the Jar you have downloaded in " Installation and Environment set up " step.
 
-![placeholder](http://placehold.it/800x400 "Large example image")
+<img src="{{ '/assets/img/buildpath.jpg'}}" alt=""> 
 
 ### Gists via GitHub Pages
 
