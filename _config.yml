@@ -9,8 +9,7 @@ permalink:        pretty
 # Setup
 title:            Test Automation Tutorials
 tagline:          'learning simplified'
-description:      'All these tutorials are scripted by Arulprasath. He is working as a automation developer in a leading MNC.
-He also writes useful general articles for Engineering students at <a href="http://www.counsellingguru.com" target="_blank">CounsellingGuru.com</a>. You can contact us through our<a href="https://www.facebook.com/counsellingguruteam/" target="_blank">facebook page</a>.'
+description:      'All these tutorials are scripted by Arulprasath.He also writes useful general articles for Engineering students at <a href="http://www.counsellingguru.com" target="_blank">CounsellingGuru.com</a>. You can contact us through our<a href="https://www.facebook.com/counsellingguruteam/" target="_blank">facebook page</a>.'
 url:              http://hyde.getpoole.com
 baseurl:          /
 
