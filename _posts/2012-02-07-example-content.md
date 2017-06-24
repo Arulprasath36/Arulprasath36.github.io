@@ -66,7 +66,7 @@ If you have knowledge in using Eclipse, you can straight away use the code. If y
 
 *And then add the Jar you have downloaded in " Installation and Environment set up " step.
 
-<img src="{{ '/assets/img/buildpath.jpg'}}" alt=""> 
+<img src="{{'https://github.com/Arulprasath36/Arulprasath36.github.io/blob/master/assets/img/buildpath.PNG'}}" alt=""> 
 
 ### Gists via GitHub Pages
 
