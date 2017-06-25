@@ -64,7 +64,7 @@ If you have knowledge in using Eclipse, you can straight away use the code. If y
 
 * If you are sing chrome driver then use, `System.setProperty("webdriver.chromedriver.driver", "path of your chrome driver\\chromedriver.exe"); `
 
-<img src="{{'https://github.com/Arulprasath36/Arulprasath36.github.io/blob/master/assets/img/buildpath.PNG'}}" alt=""> 
+<img src="{{'Arulprasath36.github.io/assets/img/buildpath.PNG'}}" alt=""> 
 
 #### Run the program
 *If you had add the selenium Jar in the buildpath, your program is ready to run.
@@ -124,6 +124,20 @@ We are instructing the program to find the text box in google home page and aski
 ### Web element! web element! Where are you?
 
 We have so many tasks to be done on a webpage. For instance, we might search, click a link, download a file, upload a file and so on. For all these operations, we have to find the respective element and click that. In our code also, we are going to do the same. Let's find out how to find the elements.
+
+### It's time to know what's behind your browser
+
+In order to find the web elements for scripting our automation program, we need to have a browser. I will be explaining this tutorial with Chrome.
+
+I hope you remember in the previous example, we have seen a line of code, `driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");`. Now lets know how deeper about this.
+
+So far in our example, we have opened a web page (google.com), but what do we do with google? We will search isn't it? Let's say I want to search the term "smile please". Let's find how to do that in code.
+
+<img src="{{'Arulprasath36.github.io/assets/img/finding text box.PNG'}}" alt=""> 
+
+First we have to find the web element (the search box). Right click on your browser, you can see an option called *Inspect element* click on that.
+
+<img src="{{'Arulprasath36.github.io/assets/img/inspect element.PNG'}}" alt=""> 
 
 ### Lists
 
