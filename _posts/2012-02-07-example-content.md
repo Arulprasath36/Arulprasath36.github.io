@@ -145,28 +145,27 @@ As you can see from the highlighted attributes,we can select the web element by 
 
 For this example, I have selected the search box by name and sent the input via *sendKeys()* method to enter the search term.
  
-
 ### Types of locators in Selenium
 
 Selenium webdriver uses 8 locators to find the elements on web page. The following are the list of object identifier or locators supported by selenium.
 
 Below is the list of locators to be used when scripting.
 
-*<strong>id<strong> Select element with the specified @id attribute.
+<strong>id<strong> Select element with the specified @id attribute.
 
-*<strong>Name<strong> Select first element with the specified @name attribute.
+<strong>Name<strong> Select first element with the specified @name attribute.
 
-*<strong>Linktext<strong> Select link (anchor tag) element which contains text matching the specified link text
+<strong>Linktext<strong> Select link (anchor tag) element which contains text matching the specified link text
 
-*<strong>Partial Linktext<strong> Select link (anchor tag) element which contains text matching the specified partial link text
+<strong>Partial Linktext<strong> Select link (anchor tag) element which contains text matching the specified partial link text
 
-*<strong>Tag Name<strong> Locate Element using a Tag Name .
+<strong>Tag Name<strong> Locate Element using a Tag Name .
 
-*<strong>Class name<strong> Locate Element using a class Name .
+<strong>Class name<strong> Locate Element using a class Name .
 
-*<strong>Css<strong> Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
+<strong>Css<strong> Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
 
-*<strong>Xpath <strong> Locate an element using an XPath expression.
+<strong>Xpath <strong> Locate an element using an XPath expression.
 
 <div class="message">
   Each locator is important and helps the programmer at different contexts. We will look at all these with examples.
