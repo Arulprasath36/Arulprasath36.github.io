@@ -151,26 +151,97 @@ Selenium webdriver uses 8 locators to find the elements on web page. The followi
 
 Below is the list of locators to be used when scripting.
 
-*id* Select element with the specified @id attribute.
+1. *id* Select element with the specified @id attribute.
 
-*Name* Select first element with the specified @name attribute.
+2. *Name* Select first element with the specified @name attribute.
 
-*Linktext* Select link (anchor tag) element which contains text matching the specified link text
+3. *Linktext* Select link (anchor tag) element which contains text  matching the specified link text
 
-*Partial Linktext* Select link (anchor tag) element which contains text matching the specified partial link text
+4.*Partial Linktext* Select link (anchor tag) element which contains text matching the specified partial link text
 
-*Tag Name* Locate Element using a Tag Name .
+5. *Tag Name* Locate Element using a Tag Name .
 
-*Class* nameLocate Element using a class Name .
+6. *Class* nameLocate Element using a class Name .
 
-*Css* Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
+7. *Css* Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
 
-*Xpath* Locate an element using an XPath expression.
+8. *Xpath* Locate an element using an XPath expression.
 
 <div class="message">
   Each locator is important and helps the programmer at different contexts. We will look at all these with examples.
 </div>
 
+### Locate by ID:
+
+The most efficient and easiest way to locate an element on a web page is By ID. IDs will be the unique on a web page which can be easily identified.
+IDs are the safest and fastest locator option and should always be the first choice even when there are multiple choices, It is like an Employee Number or Account which will be unique.
+
+	<input id="email" class="required" type="text"/>
+
+For the above code, we can write the script as
+	
+	WebElement email_box = driver.findElement(By.id("email")); 
+
+### Drawbacks:
+1. Some web pages have their IDs dynamically generated and are not static.
+
+### Locate by Name:
+
+When there is no Id to use, the next locator we should look for is a name attribute. 
+
+	<input name="password" class="required" type="text"/>
+	WebElement password_field= driver.findElement(By.name("password"));
+
+### Drawbacks:
+1. The name cannot be unique all the times. If there are multiple names, Selenium will always perform action on the first matching element
+
+### Locate by Link text:
+This method is extremely useful when we are dealing with links on the web pages.
+
+	<a href="http://www.counsellingguru.com/contact">Contact</a>
+	WebElement contact_page_link = driver.findElement(By.linkText("Contact"));
+
+### Drawbacks:
+1.If there are multiple links with the same link text (such as repeated header and footer menu links), in such cases Selenium will perform action on the first matching element with link.
+
+### Locate by Partial Link text:
+If we are unsure on the entire link text. we can use partial link text. For example, Contact page may have link like contact or contact us. In this case, we can use contact as our partial link text. Because that is going to be there for sure. Even if the link text is contact us. It will work.
+
+	<a href="http://www.counsellingguru.com/contact">Contact Us</a>
+	WebElement contact_page_link = driver.findElement(By.PartialLinkText("Contact"));
+
+### Locating an Element By Class Name:
+	WebElement search_box =driver.findElement(By.className(“gsfi”));
+
+Google's search box found using class name. Refer the highlighted snapshot above.
+
+### Locating an Element By TagName: 
+
+This is useful when dealing with group elements like drop down, checkboxes.
+
+	Select select = new Select(driver.findElement(By.tagName("select")));
+	select.selectByVisibleText("November");
+
+### Locating an Element By xpath
+We don't need to know much deeper about xpath. Just keep this in mind. Xpath is like a map on where the element is located in that browser window.
+
+Example (Native Xpath):
+
+	html/head/body/table/tr/td
+
+Relative Xpath 
+	
+	//table/tr/td
+
+NOTE:<font color="red">Teaching how to write xpath is not the scope of this tutorial. Below is the easy way to get the xpath of any element. 
+
+*Inspect Element->Right click on the highlighted part->copy->copy xpath* <font>
+
+<img src="{{'Arulprasath36.github.io/assets/img/copy xpath.PNG'}}" alt=""> 
+
+### CSS selectors
+
+I'm not going to explain this now. We will cover this in the later part. Once you have some better understanding. This is not needed as of now.
 
 ### Images
 
