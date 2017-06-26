@@ -5,6 +5,7 @@ highlighter:      pygments
 # Permalinks
 permalink:        pretty
 
+encoding: UTF-8
 
 # Setup
 title:            Selenium
