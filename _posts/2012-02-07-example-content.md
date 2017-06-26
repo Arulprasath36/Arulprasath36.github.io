@@ -131,7 +131,7 @@ In order to find the web elements for scripting our automation program, we need 
 
 I hope you remember in the previous example, we have seen a line of code, `driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");`. Now lets know deeper about this.
 
-So far in our example, we have opened a web page (google.com), but what do we do with google? We will search isn't it? Let's say I want to search the term "smile please". Let's find how to do that in code.
+So far in our example, we have opened a web page (google.com), but what do we do with google? We will search isn't it? Let's say I want to search the term "say cheese". Let's find how to do that in code.
 
 <img src="{{'Arulprasath36.github.io/assets/img/finding text box.PNG'}}" alt=""> 
 
