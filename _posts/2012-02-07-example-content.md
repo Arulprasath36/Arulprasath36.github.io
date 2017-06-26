@@ -143,34 +143,108 @@ First we have to find the web element (the search box). Right click on your brow
 
 As you can see from the highlighted attributes,we can select the web element by *name,id,class,xpath* and several other attributes.
 
-For this example, I have selected the search box by name and sent the inout via *sendKeys()* method to enter the search term.
+For this example, I have selected the search box by name and sent the input via *sendKeys()* method to enter the search term.
  
-### Lists
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+### Types of locators in Selenium
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
+Selenium webdriver uses 8 locators to find the elements on web page. The following are the list of object identifier or locators supported by selenium.
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+Below is the list of locators to be used when scripting.
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+*<strong>id<strong> Select element with the specified @id attribute.
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+*<strong>Name<strong> Select first element with the specified @name attribute.
 
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
+*<strong>Linktext<strong> Select link (anchor tag) element which contains text matching the specified link text
 
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
+*<strong>Partial Linktext<strong> Select link (anchor tag) element which contains text matching the specified partial link text
 
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
+*<strong>Tag Name<strong> Locate Element using a Tag Name .
+
+*<strong>Class name<strong> Locate Element using a class Name .
+
+*<strong>Css<strong> Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
+
+*<strong>Xpath <strong> Locate an element using an XPath expression.
+
+<div class="message">
+  Each locator is important and helps the programmer at different contexts. We will look at all these with examples.
+</div>
+
+###Locate by ID:
+
+The most efficient and easiest way to locate an element on a web page is By ID. IDs will be the unique on a web page which can be easily identified.
+IDs are the safest and fastest locator option and should always be the first choice even when there are multiple choices, It is like an Employee Number or Account which will be unique.
+
+	<input id="email" class="required" type="text"/>
+
+For the above code, we can write the script as
+	
+	WebElement email_box = driver.findElement(By.id("email")); 
+
+###Drawbacks:
+1. Some web pages have their IDs dynamically generated and are not static.
+
+### Locate by Name:
+
+When there is no Id to use, the next locator we should look for is a name attribute. 
+
+	<input name="password" class="required" type="text"/>
+	WebElement password_field= driver.findElement(By.name("password"));
+
+###Drawbacks:
+1. The name cannot be unique all the times. If there are multiple names, Selenium will always perform action on the first matching element
+
+### Locate by Link text:
+This method is extremely useful when we are dealing with links on the web pages.
+
+	<a href="http://www.counsellingguru.com/contact">Contact</a>
+	WebElement contact_page_link = driver.findElement(By.linkText("Contact"));
+
+###Drawbacks:
+1.If there are multiple links with the same link text (such as repeated header and footer menu links), in such cases Selenium will perform action on the first matching element with link.
+
+### Locate by Partial Link text:
+If we are unsure on the entire link text. we can use partial link text. For example, Contact page may have link like contact or contact us. In this case, we can use contact as our partial link text. Because that is going to be there for sure. Even if the link text is contact us. It will work.
+
+	<a href="http://www.counsellingguru.com/contact">Contact Us</a>
+	WebElement contact_page_link = driver.findElement(By.PartialLinkText("Contact"));
+
+###Locating an Element By Class Name:
+	WebElement search_box =driver.findElement(By.className(“gsfi”));
+
+Google's search box found using class name. Refer the highlighted snapshot above.
+
+###Locating an Element By TagName: 
+
+This is useful when dealing with group elements like drop down, checkboxes.
+
+	Select select = new Select(driver.findElement(By.tagName("select")));
+	select.selectByVisibleText("November");
+
+###Locating an Element By xpath
+We don't need to know much deeper about xpath. Just keep this in mind. Xpath is like a map on where the element is located in that browser window.
+
+Example (Native Xpath):
+
+	html/head/body/table/tr/td
+
+Relative Xpath 
+	
+	//table/tr/td
+
+
+NOTE:<font color="red">Teaching how to write xpath is not the scope of this tutorial. Below is the easy way to get the xpath of any element. 
+
+*Inspect Element->Right click on the highlighted part->copy->copy xpath* <font>
+
+<img src="{{'Arulprasath36.github.io/assets/img/copy xpath.PNG'}}" alt=""> 
+
+###CSS selectors
+
+I'm not going to explain this now. We will cover this in the later part. Once you have some better understanding. This is not needed as of now.
+
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
 
