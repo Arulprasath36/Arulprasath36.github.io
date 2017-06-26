@@ -151,21 +151,21 @@ Selenium webdriver uses 8 locators to find the elements on web page. The followi
 
 Below is the list of locators to be used when scripting.
 
-1. *id* Select element with the specified @id attribute.
+*id* Select element with the specified @id attribute.
 
-2. *Name* Select first element with the specified @name attribute.
+*Name* Select first element with the specified @name attribute.
 
-3. *Linktext* Select link (anchor tag) element which contains text  matching the specified link text
+*Linktext* Select link (anchor tag) element which contains text  matching the specified link text
 
-4.*Partial Linktext* Select link (anchor tag) element which contains text matching the specified partial link text
+*Partial Linktext* Select link (anchor tag) element which contains text matching the specified partial link text
 
-5. *Tag Name* Locate Element using a Tag Name .
+*Tag Name* Locate Element using a Tag Name .
 
-6. *Class* nameLocate Element using a class Name .
+*Class* nameLocate Element using a class Name .
 
-7. *Css* Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
+*Css* Select the element using css selectors. You can check here for Css examples and You can also refer W3C CSS Locators
 
-8. *Xpath* Locate an element using an XPath expression.
+*Xpath* Locate an element using an XPath expression.
 
 <div class="message">
   Each locator is important and helps the programmer at different contexts. We will look at all these with examples.
