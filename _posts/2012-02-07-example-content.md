@@ -129,7 +129,7 @@ We have so many tasks to be done on a webpage. For instance, we might search, cl
 
 In order to find the web elements for scripting our automation program, we need to have a browser. I will be explaining this tutorial with Chrome.
 
-I hope you remember in the previous example, we have seen a line of code, `driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");`. Now lets know how deeper about this.
+I hope you remember in the previous example, we have seen a line of code, `driver.findElement(By.name("q")).sendKeys("Bishop heber trichy");`. Now lets know deeper about this.
 
 So far in our example, we have opened a web page (google.com), but what do we do with google? We will search isn't it? Let's say I want to search the term "smile please". Let's find how to do that in code.
 
@@ -137,8 +137,14 @@ So far in our example, we have opened a web page (google.com), but what do we do
 
 First we have to find the web element (the search box). Right click on your browser, you can see an option called *Inspect element* click on that.
 
-<img src="{{'Arulprasath36.github.io/assets/img/inspect element.PNG'}}" alt=""> 
+<img src="{{'Arulprasath36.github.io/assets/img/inspect element.PNG'}}" alt="">
 
+<img src="{{'Arulprasath36.github.io/assets/img/inspect search box.PNG'}}" alt=""> 
+
+As you can see from the highlighted attributes,we can select the web element by *name,id,class,xpath* and several other attributes.
+
+For this example, I have selected the search box by name and sent the inout via *sendKeys()* method to enter the search term.
+ 
 ### Lists
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
