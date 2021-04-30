@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's time to bring out the programmer
+title : It's time to bring out the programmer
 ---
 ### Task 1: Open the Firefox and go to Google.com
 
@@ -211,7 +211,7 @@ If we are unsure on the entire link text. we can use partial link text. For exam
 	WebElement contact_page_link = driver.findElement(By.PartialLinkText("Contact"));
 
 ### Locating an Element By Class Name:
-	WebElement search_box =driver.findElement(By.className(“gsfi”));
+	WebElement search_box =driver.findElement(By.className(Â“gsfiÂ”));
 
 Google's search box found using class name. Refer the highlighted snapshot above.
 
